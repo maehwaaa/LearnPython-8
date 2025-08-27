@@ -9,16 +9,16 @@ owner = input("Введите имя владельца: ")
 
 #Поправляем грамматику
 if age % 10 == 1 and age % 100 != 11:
-    suffix = "год"
+    vozrast = "год"
 elif age % 10 in [2, 3, 4] and not (age % 100 in [12, 13, 14]):
-    suffix = "года"
+    vozrast = "года"
 else:
-    suffix = "лет"
+    vozrast = "лет"
     
 #Создаем внутренний словарь с информацией о питомце
 pet_info = {
     'Вид питомца': species,
-    'Возраст питомца': f"{age}, {suffix}",
+    'Возраст питомца': f"{age}, {vozrast}",
     'Имя владельца': owner
 }
 
